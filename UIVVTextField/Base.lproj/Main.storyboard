@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GOp-tW-aMT" customClass="UIVVTextField">
+                                <rect key="frame" x="202" y="98" width="197" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="CPl-h2-XwQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cbj-kw-Ibs" customClass="UIVVTextField">
+                                <rect key="frame" x="202" y="184" width="197" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BA2-SJ-NyN">
+                                <rect key="frame" x="202" y="141" width="197" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uaZ-59-tCi" customClass="UIVVTextView">
+                                <rect key="frame" x="202" y="225" width="197" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="7Iq-Ta-Cof"/>
+                                    <constraint firstAttribute="width" constant="197" id="pd9-HQ-qhC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a2-cy-cpR">
+                                <rect key="frame" x="220" y="326" width="160" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="80t-42-8rh"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GSB-cK-Dic"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uaZ-59-tCi" firstAttribute="top" secondItem="cbj-kw-Ibs" secondAttribute="bottom" constant="11" id="1DH-ks-Kbh"/>
+                            <constraint firstItem="uaZ-59-tCi" firstAttribute="centerX" secondItem="cbj-kw-Ibs" secondAttribute="centerX" id="1EH-Ck-WGD"/>
+                            <constraint firstItem="cbj-kw-Ibs" firstAttribute="top" secondItem="GOp-tW-aMT" secondAttribute="bottom" constant="56" id="1L7-wb-Ywz"/>
+                            <constraint firstItem="uaZ-59-tCi" firstAttribute="leading" secondItem="cbj-kw-Ibs" secondAttribute="leading" id="9Zq-bw-haj"/>
+                            <constraint firstItem="uaZ-59-tCi" firstAttribute="trailing" secondItem="cbj-kw-Ibs" secondAttribute="trailing" id="BMT-oQ-2S5"/>
+                            <constraint firstItem="BA2-SJ-NyN" firstAttribute="leading" secondItem="GOp-tW-aMT" secondAttribute="leading" id="Bwu-c1-B8d"/>
+                            <constraint firstItem="GOp-tW-aMT" firstAttribute="leading" secondItem="cbj-kw-Ibs" secondAttribute="leading" id="aYC-OA-6bE"/>
+                            <constraint firstItem="GOp-tW-aMT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="78" id="gkh-LP-o1L"/>
+                            <constraint firstItem="BA2-SJ-NyN" firstAttribute="top" secondItem="GOp-tW-aMT" secondAttribute="bottom" constant="13" id="hW5-Ai-xgd"/>
+                            <constraint firstItem="6a2-cy-cpR" firstAttribute="centerX" secondItem="uaZ-59-tCi" secondAttribute="centerX" id="kBL-6C-oel"/>
+                            <constraint firstItem="BA2-SJ-NyN" firstAttribute="trailing" secondItem="GOp-tW-aMT" secondAttribute="trailing" id="mJS-Oy-4yg"/>
+                            <constraint firstItem="6a2-cy-cpR" firstAttribute="top" secondItem="uaZ-59-tCi" secondAttribute="bottom" constant="23" id="nIJ-f9-jLG"/>
+                            <constraint firstItem="cbj-kw-Ibs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r25-tx-Can"/>
+                            <constraint firstItem="GOp-tW-aMT" firstAttribute="trailing" secondItem="cbj-kw-Ibs" secondAttribute="trailing" id="stu-fc-0p5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MobileField" destination="cbj-kw-Ibs" id="dQd-Yi-Tab"/>
+                        <outlet property="aboutTextView" destination="uaZ-59-tCi" id="Z76-fv-2PR"/>
+                        <outlet property="nameField" destination="GOp-tW-aMT" id="fmG-pW-eyn"/>
+                        <outlet property="passwordField" destination="BA2-SJ-NyN" id="Nuw-Ft-vhn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="389"/>
+        </scene>
+    </scenes>
+</document>
